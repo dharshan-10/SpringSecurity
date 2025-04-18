@@ -17,7 +17,8 @@ import java.util.function.Function;
 
 @Service
 public class JwtService {
-    private String secretKey="ghjk2332hjbbjk453kbkjbkjbgjhvbkjhiugb65456viv67viuvbudxcytzw32iubo88biubiu";
+    private String secretKey="";
+    //Replace it with your secret Key
     public String generateToken(String username) {
         Map<String, Object> claims= new HashMap<>();
         return Jwts.builder()
